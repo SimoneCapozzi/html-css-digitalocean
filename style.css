@@ -202,11 +202,7 @@ main{
   padding-bottom: 60px;
 }
 
-/* .cs-deploy .container .row [class="col-"]{
-   height: 100px; 
-  border: 2px solid greenyellow;
-} */
-/* eliminare */
+
 .cs-deploy .container .row .ll_nested{
   height: auto;
 }
