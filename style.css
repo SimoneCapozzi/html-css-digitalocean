@@ -4,8 +4,27 @@ body{
 }
 /* /globale */
 
+/* generale */
+
+.border-color{
+  border-color: #3F8FFF;
+}
+
+.color-text-botton{
+  color: #3F8FFF;
+}
+
+.text-decoration{
+  text-decoration: underline;
+}
+
 .text-white{
   color: white;
+}
+
+
+.text-black{
+  color: black;
 }
 
 .text-light-blue{
@@ -15,6 +34,8 @@ body{
 .text-color-gray{
  color: #737F9A;
 }
+
+/* /generale */
 
 .form1{
   padding-left: 20px;
@@ -34,6 +55,7 @@ body{
   margin-top: 5px;
   margin-bottom: 10px;
   box-shadow: 1px 1px 1px #dedede;
+  
 }
 
 .google-icon{
@@ -52,7 +74,7 @@ body{
 main{
   margin-top: 100px;
 }
-
+/* nav */
 .cs-nav{
   width: 100%;
   height: 100px;
@@ -65,29 +87,56 @@ main{
 
 .cs-nav .container .row [class*="col-"]{
   line-height: 100px;
+  padding-right: 35px;
 }
 
 .logo-ocean{
   width: 200px;
+  padding-left: 25px;
 }
 
-.cs-loghi .container .row [class*="col-"]{
-  line-height: 100px;
+.cs-nav .container .row .col-lg-4 ul li{
+  display: inline;
+  padding-right: 5px;
 }
 
-
-.cs-deploy .container .row .container-nested{
-  height: auto;
+.btn-nav{
+  width: 20px;
+  padding-right: 20px;
+  background-color: white;
+  color: #006AFF;
 }
+
+/* /nav */
+
+
+/* jumbotron */
+
 
 .cs-jumbotron{
   width: 100%;
   background-image: url(img/bg-banner-home.jpg);
+}
+
+@media all and (min-width: 768px) and (max-width: 1199px){
+  .cs-jumbotron .container .row .col-xs-12.col-sm-7.col-lg-7 h1{
+    font-size: 40px;
+  }
+  .cs-jumbotron .container .row .col-xs-12.col-sm-5.col-lg-5 h2{
+    font-size: 40px;
+  }
   
 }
+
 .cs-jumbotron .container .row h1{
   font-size: 64px;
   font-family: 700;
+}
+
+
+.box1{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .p-jumbotron{
@@ -96,12 +145,6 @@ main{
   font-size: 22px;
   color: #b3c7ff;
 }
-
-.box1{
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 .cs-jumbotron .container .row h2{
   font-family: Roboto;
   font-weight: 700;
@@ -122,38 +165,21 @@ main{
 
 .box1{
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .text-right-66{
   padding-right: 66px;
 }
-  
+
+/* /jumbotron */
+
+/* loghi */
+
 
 
 .cs-loghi{
   background-color: #F3F5F9;
-}
-
-.cs-loghi .container .row ul li{
-  display: inline;
-}
-
-.cs-loghi .container .row ul li [class*="img-log"]{
-  width: 100%;
-  background-position: 50%;
-}
-
-@media screen and(min-width: 768px){
-  .cs-loghi .container .row ul li .img-log{
-    width: 100%;
-  }
-}
-
-@media screen and(max-width: 768px){
-  .cs-loghi .container .row ul li .img-log{
-    width: 
-  }
 }
 
 
@@ -164,31 +190,57 @@ main{
   padding-bottom: 20px;
 }
 
-
-/* .cs-loghi .container .row [class*="col-"]{
-  height: 100px;
-  border: 1px solid black;
-} */
+/* /loghi */
 
 
+/* deplay */
 
-.cs-deploy{
-  background-color: aquamarine;
-  height: 500px;
-}
 
 
 .cs-deploy .container{
-  padding-left: 40px;
-  padding-right: 40px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.cs-deploy .container .row [class*="col-"]{
-  height: 100px;
-  border: 1px solid black;
+/* .cs-deploy .container .row [class="col-"]{
+   height: 100px; 
+  border: 2px solid greenyellow;
+} */
+/* eliminare */
+.cs-deploy .container .row .ll_nested{
+  height: auto;
 }
+
+@media all and (max-width: 480px){
+  .cs-deploy .container .row .col-xs-12.text-center p{
+    font-size: 27px;
+  }
+}
+
+@media all and (min-width:992px) and (max-width: 1199px){
+  .cs-deploy .container .row .col-xs-12.text-center p{
+    font-size: 30px;
+  }
+}
+
+@media all and (min-width:1200px){
+  .cs-deploy .container .row .col-xs-12.text-center p{
+    font-size: 23px;
+  }
+}
+
+.cs-deploy .container .row .col-xs-12.col-md-3.col-lg-4 ul li{
+  list-style-type: none;
+  padding-left: 15px;
+  border-left: 2px solid gray;
+  line-height: 40px;
+}
+
+
+
+/* deplay */
+
+/* designed */
 
 .cs-designed{
   background-color: lightgray;
@@ -199,6 +251,9 @@ main{
   border: 2px solid white;
 }
 
+/* /designed */
+
+/* features */
 
 .cs-features{
 background-color: turquoise;
@@ -216,7 +271,9 @@ background-color: turquoise;
   height: 100px;
   border: 1px solid black;
 }
+/* /features */
 
+/* service */
 
 .cs-service{
   background-color: blue;
@@ -235,6 +292,10 @@ background-color: turquoise;
   border: 1px solid black;
 }
 
+/* /service */
+
+/* designed */
+
 .cs-designed{
   background-color: lightgray;
 }
@@ -251,6 +312,10 @@ background-color: turquoise;
    height: 100px;
   border: 1px solid black;
 }
+
+/* /designed */
+
+/* get-started */
 
 .cs-get-started{
   background-color: blue;
@@ -269,6 +334,10 @@ background-color: turquoise;
   border: 1px solid black;
 }
 
+/* /get-started */
+
+/* footer */
+
 .cs-footer{
   background-color: orange;
 }
@@ -286,7 +355,7 @@ background-color: turquoise;
   border: 1px solid black;
 }
   
-
+/* /footer */
 
 
 
