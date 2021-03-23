@@ -6,6 +6,34 @@ body{
 
 /* generale */
 
+.padding-60{
+  padding: 60px 0;
+}
+
+.margin-200{
+  margin-top: 200px;
+}
+
+.cs-box50{
+  width: 50%;
+}
+
+.cs-fs-23{
+  font-size: 23px;
+}
+
+.margin-bottom-100{
+  margin-bottom: 100px;
+}
+
+.margin-bottom-30{
+  margin-bottom: 30px;
+}
+
+.margin-top-30{
+  margin-top: 30px;
+}
+
 .border-color{
   border-color: #3F8FFF;
 }
@@ -238,15 +266,57 @@ main{
 
 /* designed */
 
-.cs-designed{
-  background-color: lightgray;
+.cs-designed .container{
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.cs-designed .container .row .col-xs-12{
-  height: 200px; /* cancellare dopo messo il contenuto */
-  border: 2px solid white;
+.cs-designed .container .row [class="col-"]{
+   /* height: 100px; 
+   border: 2px solid red;  */
 }
 
+.cs-designed .text-center ul.text-center ul{
+  list-style:none;
+  padding: 0;
+}
+
+.cs-designed .text-center ul.text-center li{
+  display: inline-block;
+
+}
+
+.cs-circle{
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 1px solid #006aff;
+}
+
+.cs-circle:active{
+  background-color: #006aff;
+}
+
+
+
+.cs-designed .text-center .glyphicon-chevron-left{
+  font-size: 40px;
+  color: #031c4e;
+}
+
+.cs-designed .text-center .glyphicon.glyphicon-chevron-right{
+  font-size: 40px;
+  color: #031c4e;
+}
+
+.cs-designed .text-center .glyphicon.glyphicon-chevron-left:active{
+  color: #6f7b97;
+}
+.cs-designed .text-center .glyphicon.glyphicon-chevron-right:active{
+  color: #6f7b97;
+}
 /* /designed */
 
 /* features */
@@ -271,7 +341,7 @@ background-color: turquoise;
 
 /* service */
 
-.cs-service{
+/* .cs-service{
   background-color: blue;
 }
   
@@ -286,30 +356,11 @@ background-color: turquoise;
 .cs-service .container .row [class*="col-"]{
   height: 100px;
   border: 1px solid black;
-}
+} */
+
 
 /* /service */
 
-/* designed */
-
-.cs-designed{
-  background-color: lightgray;
-}
-  
-.cs-designed .container{
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 60px;
-   padding-bottom: 60px;
-}
-  
-  
-.cs-designed .container .row [class*="col-"]{
-   height: 100px;
-  border: 1px solid black;
-}
-
-/* /designed */
 
 /* get-started */
 
